@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="" href="assets/img/icons8.png" />
+</head>
+
+<body>
+    <div class="row">
+        <div id="rbrand" class="row">
+            <img id="ibrand" src="assets/img/icons8.png" alt="">
+            <h2>To Do List</h2>
+        </div>
+        <div class="row">
+            <div ng-controller="TodoListController as todoList">
+                <form class="form-inline my-2 my-lg-0" ng-submit="todoList.addTodo()">
+                    <input id="inAdd" class="form-control mr-sm-2" type="text" ng-model="todoList.todoText" size="20" placeholder="Add new task here" aria-label="ToDo">
+                    <button id="btnAdd" class="btn btn-outline-info my-2 my-sm-0" type="submit" value="add">Add</button>
+                </form>
+                <ol class="list">
+                    <br>
+                    <li ng-repeat="todo in todoList.todos">
+                        <label class="checkbox">
+                           <input type="checkbox" ng-model="todo.done">
+                           <span class="done-{{todo.done}}">{{todo.text}}</span>
+                           <hr>
+                        </label>
+                    </li>
+                </ol>
+                <br>
+                <small>
+                    <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span> [ <a href="" ng-click="todoList.archive()">Archive completed tasks</a> ]
+                </small>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
