@@ -8,7 +8,7 @@ AngularJS is distributed as a JavaScript file, we added it to our web page with 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 ```
-### Clone the angular-seed repository using git:
+### Clone the `To-Do List` repository using git:
 ```git
 git clone https://github.com/diina-gh/ToDo-List/
 cd ToDo-List
