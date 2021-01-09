@@ -1,12 +1,16 @@
-.row {
-    margin: 0px 250px;
+.card {
+    background-color: bisque;
     padding: 3px 3px;
-    width: 60%;
-    height: 50%;
+}
+
+.navbar {
     background-color: bisque;
 }
 
-#rbrand {}
+#rbrand {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
 
 ol.list {
     list-style-type: decimal;
