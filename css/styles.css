@@ -1,30 +1,36 @@
-.card {
-    background-color: bisque;
-    padding: 3px 3px;
+body {
+    font: Arial, sans-serif;
+    background-color: rgb(247, 241, 230);
 }
 
-.navbar {
+.card {
+    padding: 10px 100px 10px 100px;
+}
+
+.navbar,
+.card {
     background-color: bisque;
+}
+
+.container {
+    margin-top: 3%;
 }
 
 #rbrand {
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin: 15px 5px 5px 0px
 }
 
 ol.list {
     list-style-type: decimal;
 }
 
-#ibrand {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
 .done-true {
     text-decoration: line-through;
     color: grey;
+}
+
+#inAdd {
+    background-color: rgb(247, 241, 230);
 }
 
 #btnAdd {

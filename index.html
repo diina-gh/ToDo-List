@@ -32,12 +32,12 @@
     </nav>
     <div class="container col-md-8">
         <div id="rbrand" class="row">
-            <h2>To do list :</h2>
+            <h4>Create new task:</h4>
         </div>
         <div class="card">
             <div class="card-body" ng-controller="TodoListController as todoList">
                 <form class="form-inline my-2 my-lg-0" ng-submit="todoList.addTodo()">
-                    <input id="inAdd" class="form-control mr-sm-2" type="text" ng-model="todoList.todoText" size="20" placeholder="Add new task here" aria-label="ToDo">
+                    <input id="inAdd" class="form-control mr-sm-2" type="text" ng-model="todoList.todoText" size="50" placeholder="Add new task here" aria-label="ToDo">
                     <button id="btnAdd" class="btn btn-outline-info my-2 my-sm-0" type="submit" value="add">Add</button>
                 </form>
                 <ol class="list">
